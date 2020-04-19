@@ -1,0 +1,11 @@
+[user]
+	email = marceloaguero@gmail.com
+	name = Marcelo Aguero
+[commit]
+	template = /home/marcelo/.gitmessage
+[core]
+	editor = code --wait
+[credential]
+	helper = cache
+[cola]
+	spellcheck = false
