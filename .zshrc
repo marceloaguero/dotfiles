@@ -119,3 +119,15 @@ alias ue='$HOME/Documentos/sistemas/unreal/UnrealEngine/Engine/Binaries/Linux/UE
 
 # Enable vim mode
 # bindkey -v
+
+# export ANDROID_SDK_ROOT=$HOME/Android/Sdk
+export ANDROID_SDK_ROOT=/opt/android-sdk
+# avdmanager, sdkmanager
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools
+export PATH=$PATH:$ANDROID_SDK_ROOT/tools/bin
+# adb, logcat
+export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
+# emulator
+export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
+# apksigner, zipalign
+export PATH=$PATH:$ANDROID_SDK_ROOT/build-tools/28.0.0
