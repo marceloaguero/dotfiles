@@ -6,13 +6,30 @@
 super + Return
 	alacritty
 
+# main program launcher
+super + d
+	rofi -no-lazy-grab -show drun -theme themes/appsmenu.rasi
+
 # program launcher
 super + @space
 	dmenu_run
 
 # make sxhkd reload its configuration files:
 super + Escape
-	pkill -USR1 -x sxhkd
+	pkill -USR1 -x sxhkd && notify-send -i key_bindings "Reloaded key bindings"
+
+# Miscellaneous tools and media keys
+# ----------------------------------
+
+# Screenshots (requires `scrot`).  
+# First one is for the focused window.
+super + Print
+	scrot -u -z '%Y-%m-%d_%H:%M:%S_$wx$h$n.png' -e 'mv $f ~/Imágenes' \
+    && notify-send -i gnome-screenshot "Window view screenshot" "Saved image to ~/Imágenes"
+# Second one is of the entire X session (including all active monitors).
+Print
+	scrot -m -z '%Y-%m-%d_%H:%M:%S_$wx$h.png' -e 'mv $f ~/Imágenes' \
+    && notify-send -i gnome-screenshot "Screen view screenshot" "Saved image to ~/Imágenes"
 
 #
 # bspwm hotkeys
