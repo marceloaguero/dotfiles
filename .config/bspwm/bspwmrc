@@ -28,8 +28,13 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 bspc config pointer_follows_monitor true
 
-bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a Chromium desktop='^2'
+bspc rule -a firefox desktop='^2'
+bspc rule -a Code desktop='^3'
+bspc rule -a Slack desktop='^5'
+bspc rule -a Deadbeef desktop='^6'
+bspc rule -a org.remmina.Remmina desktop='^7' state=floating
+bspc rule -a Gimp desktop='^8' state=floating follow=on
 bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
