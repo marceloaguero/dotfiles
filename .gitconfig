@@ -9,3 +9,5 @@
 	helper = cache
 [cola]
 	spellcheck = false
+[pull]
+	rebase = false

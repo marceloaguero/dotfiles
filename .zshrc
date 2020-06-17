@@ -131,3 +131,6 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/platform-tools
 export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 # apksigner, zipalign
 export PATH=$PATH:$ANDROID_SDK_ROOT/build-tools/28.0.0
+
+# gren (https://github.com/github-tools/github-release-notes) token
+source ~/.gren_github_token
