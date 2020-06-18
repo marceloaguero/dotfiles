@@ -21,3 +21,5 @@ export PATH=$PATH:$HOME/.pub-cache/bin
 
 source ~/.git-completion.bash
 source ~/.shell_prompt.sh
+
+export OPENFAAS_PREFIX="marceloaguero"

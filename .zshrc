@@ -132,5 +132,8 @@ export PATH=$PATH:$ANDROID_SDK_ROOT/emulator
 # apksigner, zipalign
 export PATH=$PATH:$ANDROID_SDK_ROOT/build-tools/28.0.0
 
+# OpenFaaS prefix for docker repository
+export OPENFAAS_PREFIX="marceloaguero"
+
 # gren (https://github.com/github-tools/github-release-notes) token
 source ~/.gren_github_token
