@@ -4,6 +4,7 @@ sxhkd &
 picom -b
 feh --bg-fill /home/marcelo/Documentos/themes/wallpapers/archnord.png
 $HOME/.config/polybar/launch.sh &
+pidof bspswallow || bspswallow &
 
 nmonitors=$(bspc query -M --names | wc -l)
 
