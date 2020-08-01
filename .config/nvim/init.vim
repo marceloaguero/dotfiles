@@ -16,6 +16,7 @@ set backspace=indent,eol,start  " Sane backspace behaviour
 set encoding=utf-8
 set incsearch           " Incremental searching
 set smartcase           " Case insensitive search if using lowercase letters
+set background=dark
 
 set shell=/bin/zsh
 
@@ -48,6 +49,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'fatih/vim-go'
 Plug 'vifm/vifm.vim'
+Plug 'itchyny/vim-gitbranch'
 Plug 'mbbill/undotree'
 
 call plug#end()
@@ -58,6 +60,13 @@ colorscheme nord
 set laststatus=2
 let g:lightline = {
   \ 'colorscheme': 'one',
+  \ 'active': {
+  \   'left': [ [ 'mode', 'paste' ],
+  \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+  \ },
+  \ 'component_function': {
+  \   'gitbranch': 'gitbranch#name'
+  \ },
   \ }
 
 " vim-go
