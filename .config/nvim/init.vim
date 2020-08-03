@@ -2,6 +2,7 @@ set nocompatible        " Do not mantain compatibility wiht vi
 syntax on
 
 set noerrorbells
+set smarttab            " tab respects 'tabstop', 'shiftwidth', and 'softtabstop'
 set expandtab			" Convert <tab> to spaces
 set tabstop=4			" Spaces per tab
 set softtabstop=4
@@ -10,6 +11,7 @@ set smartindent
 set autoindent
 set number		    	" Show current line number
 set relativenumber		" Show relatives line numbers (from current line)
+set showmatch           " Show matching braces
 set scrolloff=3			" Keep at least N lines below cursor
 set nowrap			    " Don't cut long lines
 set backspace=indent,eol,start  " Sane backspace behaviour
@@ -44,25 +46,29 @@ nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<cr>
 call plug#begin()
 
 Plug 'junegunn/vim-easy-align'
+Plug 'joshdick/onedark.vim'
 Plug 'arcticicestudio/nord-vim'
-Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
 Plug 'fatih/vim-go'
 Plug 'vifm/vifm.vim'
+Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
 Plug 'mbbill/undotree'
 
 call plug#end()
 
-colorscheme nord
+" colorscheme nord
+colorscheme onedark
 
 " Specific configurations for lightline.vim plugin
 set laststatus=2
 let g:lightline = {
-  \ 'colorscheme': 'one',
+  \ 'colorscheme': 'onedark',
   \ 'active': {
   \   'left': [ [ 'mode', 'paste' ],
-  \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+  \             [ 'gitbranch'],
+  \             [ 'readonly', 'filename', 'modified' ] ]
   \ },
   \ 'component_function': {
   \   'gitbranch': 'gitbranch#name'
