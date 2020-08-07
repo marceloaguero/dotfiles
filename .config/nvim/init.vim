@@ -45,16 +45,19 @@ nnoremap <leader>pv :wincmd v<bar> :Ex <bar> :vertical resize 30<cr>
 " vim-plug (https://github.com/junegunn/vim-plug)
 call plug#begin()
 
+Plug 'preservim/nerdtree'
+" Plug 'vifm/vifm.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'joshdick/onedark.vim'
 Plug 'arcticicestudio/nord-vim'
+Plug 'christoomey/vim-tmux-navigator'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'fatih/vim-go'
-Plug 'vifm/vifm.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'itchyny/vim-gitbranch'
 Plug 'mbbill/undotree'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
@@ -74,6 +77,12 @@ let g:lightline = {
   \   'gitbranch': 'gitbranch#name'
   \ },
   \ }
+
+" Automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
+
+" NERDTree
+map <leader>n :NERDTreeToggle<CR>
 
 " vim-go
 set autowrite
