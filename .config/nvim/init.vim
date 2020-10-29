@@ -48,6 +48,7 @@ call plug#begin()
 Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 " Plug 'vifm/vifm.vim'
+Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/vim-easy-align'
 Plug 'joshdick/onedark.vim'
 Plug 'arcticicestudio/nord-vim'

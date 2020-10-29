@@ -7,6 +7,10 @@ $HOME/.config/polybar/launch.sh &
 xmodmap $HOME/.Xmodmap &
 pidof bspswallow || bspswallow &
 
+# Change WN name for java applications (specifically jmeter)
+# https://wiki.archlinux.org/index.php/Bspwm#Problems_with_Java_applications
+#wmname LG3D
+
 nmonitors=$(bspc query -M --names | wc -l)
 
 case "$nmonitors" in

@@ -4,7 +4,7 @@
 [commit]
 	template = /home/marcelo/.gitmessage
 [core]
-	editor = code --wait
+	editor = vim
 [credential]
 	helper = cache
 [cola]

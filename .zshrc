@@ -116,6 +116,7 @@ alias k=kubectl
 alias lg='lazygit'
 alias dotfiles='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias vim=nvim
+alias t=todo.sh
 alias ue='$HOME/Documentos/sistemas/unreal/UnrealEngine/Engine/Binaries/Linux/UE4Editor -opengl'
 
 # Enable vim mode
