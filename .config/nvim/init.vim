@@ -68,8 +68,8 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 call plug#end()
 
-" colorscheme nord
-colorscheme onedark
+colorscheme nord
+" colorscheme onedark
 " colorscheme gruvbox
 
 " Automatically rebalance windows on vim resize
