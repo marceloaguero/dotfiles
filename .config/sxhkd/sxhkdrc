@@ -136,3 +136,16 @@ super + alt + shift + {h,j,k,l}
 # move a floating window
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+#Keyboard Layouts
+super + alt e
+         setxkbmap -layout es
+
+super + alt u
+          setxkbmap -layout us
+
+# Brightness control
+XF86MonBrightnessDown
+	xbacklight -dec 5
+XF86MonBrightnessUp
+	xbacklight -inc 5
