@@ -138,11 +138,24 @@ super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
 #Keyboard Layouts
-super + alt e
-         setxkbmap -layout es
+super + alt + e
+    setxkbmap -layout es
 
-super + alt u
-          setxkbmap -layout us
+super + alt + u
+    setxkbmap -layout us
+
+# Change layout (using bsp-layout)
+# master vertical (tall) or horizontal (wide)
+super + alt + {backslash,minus}
+    bsp-layout set {tall,wide}
+
+# cicle layouts
+super + alt + bracketright
+    bsp-layout cycle
+
+# remove
+super + alt + 0
+    bsp-layout remove 
 
 # Brightness control
 XF86MonBrightnessDown
