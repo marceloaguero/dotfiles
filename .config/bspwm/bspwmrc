@@ -2,7 +2,7 @@
 xsetroot -cursor_name left_ptr
 sxhkd &
 picom -b
-feh --bg-fill /home/marcelo/Documentos/themes/wallpapers/wallheaven.jpg
+feh --bg-fill /home/marcelo/Documentos/themes/wallpapers/Good_morning_1920_1080.jpg
 $HOME/.config/polybar/launch.sh &
 xmodmap $HOME/.Xmodmap &
 pidof bspswallow || bspswallow &

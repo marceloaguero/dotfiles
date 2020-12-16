@@ -4,6 +4,8 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:$HOME/.pub-cache/bin
 
+export EDITOR="vim"
+export VISUAL="vim"
 export CODEEDITOR="code"
 
 # Path to your oh-my-zsh installation.
